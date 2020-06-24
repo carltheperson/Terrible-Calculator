@@ -2,7 +2,7 @@ import { useReducer } from "react";
 
 type Operator = "+" | "-" | "*" | "/";
 
-type Action = number | Operator;
+export type Action = number | Operator;
 
 type Options = { type: "add"; action: Action } | { type: "clear" };
 
