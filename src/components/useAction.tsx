@@ -1,10 +1,10 @@
 import { useReducer } from "react";
 
-type Operator = "+" | "-" | "*" | "/";
+export type Operator = "+" | "-" | "*" | "/";
 
 export type Action = number | Operator;
 
-type Options = { type: "add"; action: Action } | { type: "clear" };
+export type Options = { type: "add"; action: Action } | { type: "clear" };
 
 type State = Action[];
 

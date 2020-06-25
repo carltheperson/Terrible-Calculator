@@ -3,6 +3,7 @@ import { Display } from "./calculator pieces/Display";
 import { Button } from "./calculator pieces/Button";
 import { useAction } from "./useAction";
 import { calculate } from "./calculate";
+import { Buttons } from "./calculator pieces/Buttons";
 
 interface Props {}
 
@@ -31,21 +32,10 @@ export const Calculator: React.FC<Props> = () => {
   return (
     <div style={styles.container}>
       <Display text={text} />
-      <Button
-        text="1"
-        color="white"
-        click={() => dispatch({ type: "add", action: 1 })}
-      />
-      <Button
-        text="+"
-        color="white"
-        click={() => dispatch({ type: "add", action: "+" })}
-      />
-      <Button text="=" color="darkgrey" click={calculateResult} />
-      <Button
-        text="C"
-        color="red"
-        click={() => {
+      <Buttons
+        dispatch={dispatch}
+        calculateResult={calculateResult}
+        clear={() => {
           dispatch({ type: "clear" });
           setText("");
         }}
@@ -57,8 +47,8 @@ export const Calculator: React.FC<Props> = () => {
 const styles = {
   container: {
     margin: "auto",
-    width: "300px",
-    height: "500px",
+    width: "290px",
+    paddingBottom: "10px",
     backgroundColor: "grey",
     borderRadius: "15px",
     overflow: "auto",
