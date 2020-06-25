@@ -8,7 +8,6 @@ interface Props {}
 
 export const Calculator: React.FC<Props> = () => {
   const [text, setText] = useState<string>("");
-  const [result, setResult] = useState<string>("");
   const [actions, dispatch] = useAction();
 
   useEffect(() => {
@@ -24,11 +23,10 @@ export const Calculator: React.FC<Props> = () => {
     );
   }, [actions]);
 
-  useEffect(() => {
-    if (result === "") return;
+  const calculateResult = () => {
     dispatch({ type: "clear" });
-    setText(result);
-  }, [result, dispatch]);
+    setText(calculate(actions).toString());
+  };
 
   return (
     <div style={styles.container}>
@@ -43,11 +41,14 @@ export const Calculator: React.FC<Props> = () => {
         color="white"
         click={() => dispatch({ type: "add", action: "+" })}
       />
-
+      <Button text="=" color="darkgrey" click={calculateResult} />
       <Button
-        text="="
-        color="darkgrey"
-        click={() => setResult(calculate(actions).toString())}
+        text="C"
+        color="red"
+        click={() => {
+          dispatch({ type: "clear" });
+          setText("");
+        }}
       />
     </div>
   );
