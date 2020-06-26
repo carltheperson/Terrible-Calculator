@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Display } from "./calculator pieces/Display";
-import { Button } from "./calculator pieces/Button";
 import { useAction } from "./useAction";
 import { calculate } from "./calculate";
 import { Buttons } from "./calculator pieces/Buttons";
+import { answers } from "./answers";
 
 interface Props {}
 
@@ -25,8 +25,19 @@ export const Calculator: React.FC<Props> = () => {
   }, [actions]);
 
   const calculateResult = () => {
+    const actualResult = calculate(actions);
+
+    let posibleAnswers: string[] = [];
+
+    answers.forEach((answer) => {
+      const possibleAnswer = answer(actualResult);
+      if (possibleAnswer.condition) {
+        posibleAnswers.push(possibleAnswer.answer);
+      }
+    });
+
     dispatch({ type: "clear" });
-    setText(calculate(actions).toString());
+    setText(posibleAnswers[Math.floor(Math.random() * posibleAnswers.length)]);
   };
 
   return (
