@@ -58,7 +58,7 @@ export const Calculator: React.FC<Props> = () => {
 const styles = {
   container: {
     margin: "auto",
-    width: "290px",
+    width: "300px",
     paddingBottom: "10px",
     backgroundColor: "grey",
     borderRadius: "15px",
