@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.481fc446.chunk.css",
-    "main.js": "/static/js/main.db15c6ea.chunk.js",
-    "main.js.map": "/static/js/main.db15c6ea.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cb72f7c3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cb72f7c3.js.map",
-    "static/js/2.7f02c42d.chunk.js": "/static/js/2.7f02c42d.chunk.js",
-    "static/js/2.7f02c42d.chunk.js.map": "/static/js/2.7f02c42d.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.84bb0d543411ded7b464b957e4d1c884.js": "/precache-manifest.84bb0d543411ded7b464b957e4d1c884.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.481fc446.chunk.css.map": "/static/css/main.481fc446.chunk.css.map",
-    "static/js/2.7f02c42d.chunk.js.LICENSE.txt": "/static/js/2.7f02c42d.chunk.js.LICENSE.txt"
+    "main.css": "https://carlriis.github.io/Terrible-Calculator/static/css/main.481fc446.chunk.css",
+    "main.js": "https://carlriis.github.io/Terrible-Calculator/static/js/main.db15c6ea.chunk.js",
+    "main.js.map": "https://carlriis.github.io/Terrible-Calculator/static/js/main.db15c6ea.chunk.js.map",
+    "runtime-main.js": "https://carlriis.github.io/Terrible-Calculator/static/js/runtime-main.42b7e7d9.js",
+    "runtime-main.js.map": "https://carlriis.github.io/Terrible-Calculator/static/js/runtime-main.42b7e7d9.js.map",
+    "static/js/2.7f02c42d.chunk.js": "https://carlriis.github.io/Terrible-Calculator/static/js/2.7f02c42d.chunk.js",
+    "static/js/2.7f02c42d.chunk.js.map": "https://carlriis.github.io/Terrible-Calculator/static/js/2.7f02c42d.chunk.js.map",
+    "index.html": "https://carlriis.github.io/Terrible-Calculator/index.html",
+    "precache-manifest.b3157e2460fd47323dd428d8edc98a65.js": "https://carlriis.github.io/Terrible-Calculator/precache-manifest.b3157e2460fd47323dd428d8edc98a65.js",
+    "service-worker.js": "https://carlriis.github.io/Terrible-Calculator/service-worker.js",
+    "static/css/main.481fc446.chunk.css.map": "https://carlriis.github.io/Terrible-Calculator/static/css/main.481fc446.chunk.css.map",
+    "static/js/2.7f02c42d.chunk.js.LICENSE.txt": "https://carlriis.github.io/Terrible-Calculator/static/js/2.7f02c42d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cb72f7c3.js",
+    "static/js/runtime-main.42b7e7d9.js",
     "static/js/2.7f02c42d.chunk.js",
     "static/css/main.481fc446.chunk.css",
     "static/js/main.db15c6ea.chunk.js"
