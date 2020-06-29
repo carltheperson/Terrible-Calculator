@@ -28,7 +28,6 @@ export const Calculator: React.FC<Props> = () => {
     const actualResult = calculate(actions);
 
     let posibleAnswers: string[] = [];
-
     answers.forEach((answer) => {
       const possibleAnswer = answer(actualResult);
       if (possibleAnswer.condition) {
